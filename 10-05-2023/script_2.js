@@ -4,7 +4,7 @@
 const qS = (element) => document.querySelector(element);
 const formEl = qS(".form");
 const resultEl = qS("#result");
-
+console.log(formEl)
 formEl.addEventListener("submit", (e) => {
   e.preventDefault();
   const value1 = parseFloat(qS("#value1").value);
