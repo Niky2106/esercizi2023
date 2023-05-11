@@ -1,0 +1,120 @@
+/* INIZIO PRIMO ESERCIZIO : */
+body {
+    background-color: pink;
+}
+
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
+  }
+  
+  .todoInput {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #3c3743;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .todoButton {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #ed3396;
+    color: rgb(18, 11, 16);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .todoButton:hover {
+    background-color: #45a049;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .listItem {
+    padding: 8px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    margin-bottom: 4px;
+  }
+  
+  .listCompleted {
+    text-decoration: line-through;
+    background-color: #d3d3d3;
+  }
+
+  /* FINE PRIMO ESERCIZIO  */
+
+  /* INIZIO ESERCIZIO AVANZATO */
+
+  .todo-container {
+    width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    margin-bottom: 4px;
+  }
+  
+  li span {
+    flex-grow: 1;
+  }
+  
+  li button {
+    margin-left: 8px;
+    background-color: #ff0000;
+    color: white;
+  }
+
+  /* FINE ESERCIZIO AVANZATO */

@@ -1,9 +1,9 @@
-input[type="number"] {
+/* input[type="number"] {
     width: 100px;
-  }
+  } */
 
 
-  /* body {
+  body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,4 +76,4 @@ input[type="number"] {
   
   .equal:hover {
     background-color: #0f8740;
-  } */
+  }
