@@ -1,52 +1,48 @@
+import {
+  cE, qS, createProduct, createProductModal
+}
+  from "./utils/service.js"
+
+
 const productsURL = 'https://dummyjson.com/products';
 
-// Fetch products data from the URL
+const productList = qS("#product-list");
 fetch(productsURL)
   .then(response => response.json())
   .then(data => {
-    const products = data.slice(0, 10); // Get first 10 products
+    console.log(data);
+    data.products.forEach(product => {
 
-    displayProducts(products);
-    addAddToCartEventListeners();
+      productList.append(createProduct(product))
+    });
+
   })
   .catch(error => console.log(error));
 
-// Function to display products on the page
-function displayProducts(products) {
-  const productContainer = document.getElementById("product-list");
-  productContainer.innerHTML = "";
+// fetch("https://dummyjson.com/products")
+//   .then((res) => res.json())
+//   .then((data) => {
+//     data.products.forEach((product) =>
+//       productList.append(createProduct(product))
+//     );
+//   })
+//   .then(() => {
+//     const productCardEls = qSA(".productCard");
 
-  products.forEach(product => {
-    const productDiv = document.createElement("div");
-    productDiv.className = "product";
-    productDiv.innerHTML = `
-      <img src="${product.thumbnail}" alt="${product.title}">
-      <h3>${product.title}</h3>
-      <p>${product.description}</p>
-      <p>Price: $${product.price}</p>
-      <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
-    `;
-    productContainer.appendChild(productDiv);
-  });
-}
-
-// Function to add event listeners to Add to Cart buttons
-function addAddToCartEventListeners() {
-  const addToCartButtons = document.getElementsByClassName("add-to-cart");
-  for (let i = 0; i < addToCartButtons.length; i++) {
-    addToCartButtons[i].addEventListener("click", addToCart);
-  }
-}
-
-// Function to handle Add to Cart button click
-function addToCart(event) {
-  const productId = event.target.getAttribute("data-id");
-  const product = products.find(item => item.id === parseInt(productId));
-
-  if (product) {
-    const cartCountElement = document.getElementById("cart-count");
-    let cartCount = parseInt(cartCountElement.innerText);
-    cartCount++;
-    cartCountElement.innerText = cartCount;
-  }
-}
+//     productCardEls.forEach((product) =>
+//       product.addEventListener("click", () => {
+//         fetch(`https://dummyjson.com/products/${product.id}`)
+//           .then((res) => res.json())
+//           .then((data) => {
+//             const modal = createProductModal(data, rootEl);
+//             const closeButton = cE("button");
+//             closeButton.textContent = "Close";
+//             closeButton.addEventListener("click", () => {
+//               modal.remove();
+//             });
+//             modal.appendChild(closeButton);
+//             rootEl.append(modal);
+//           });
+//       })
+//     );
+//   });
