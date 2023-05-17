@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce CB7 - Vanilla JS</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" type="module"></script>
+    <script src="./obj.js/obj.js" type="module"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="navbar__links">
+            <li>
+                <button> <a href="#">Home</a> </button>
+            </li>
+            <li>
+                <button><a href="#">Contacts</a></button>
+            </li>
+            <li>
+                <button><a href="#">About</a></button>
+            </li>
+        </ul>
+        <form class="navbar__search">
+            <input class="searchInput" type="text" placeholder="Search Product" minlength="3" required />
+        </form>
+        <ul class="navbar__user">
+            <button>
+                <li>👤 Account</li>
+            </button>
+            <button>
+                <li>🛒 Cart</li>
+            </button>
+        </ul>
+    </div>
+    <div class="hero">
+        <img src="https://picsum.photos/1200/800" alt="hero image" />
+        <div class="hero__content">
+            <h1>Prodotti per te!</h1>
+            <button id="acquista">Shop Now</button>
+        </div>
+    </div>
+    <form class="ul__filters">
+        <select class="categories" name="category" id="category">
+            <option value="Make-Up">Tutti</option>
+            <option value="">Face Primer</option>
+            <option value="">Foundation</option>
+            <option value="">Concealer</option>
+            <option value="">Contour</option>
+            <option value="">Blush</option>
+            <option value="">Highlighter</option>
+            <option value="">Bronzer</option>
+            <option value="">Makeup setting spray</option>
+            <option value="">Eye Primer</option>
+            <option value="">Eye Shadow</option>
+            <option value="">Mascara</option>
+            <option value="">Eye Liner</option>
+            <option value="">Kajal</option>
+            <option value=""> Lipstick</option>
+            <option value="">Nail Paint</option>
+        </select>
+        <select class="orderProducts" name="orderby" id="orderbyprice">
+            <option value=""> Ordina per prezzo</option>
+            <option value="0-100">da 0 a 200</option>
+            <option value="200-1000">da 200 a 1000</option>
+        </select>
+    </form>
+    <div id="root"></div>
+</body>
+
+</html>
