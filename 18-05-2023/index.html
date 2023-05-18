@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce CB7 - Vanilla JS</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" type="module"></script>
+    <script src="./utils/service.js" type="module"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="navbar__links">
+            <li>
+                <button> <a href="#">Home</a> </button>
+            </li>
+            <li>
+                <button><a href="#">Contacts</a></button>
+            </li>
+            <li>
+                <button><a href="#">About</a></button>
+            </li>
+        </ul>
+        <form class="navbar__search">
+            <input class="searchInput" type="text" placeholder="Search Product" minlength="3" required />
+        </form>
+        <ul class="navbar__user">
+            <button>
+                <li>👤 Account</li>
+            </button>
+            <button class="btn_Cart">
+                <li>🛒 Cart</li>
+            </button>
+        </ul>
+    </div>
+    <div class="hero">
+        <img src="https://picsum.photos/1200/800" alt="hero image" />
+        <div class="hero__content">
+            <h1>Prodotti per te!</h1>
+            <button id="acquista">Shop Now</button>
+        </div>
+    </div>
+    <form class="ul__filters">
+        <select class="categories" name="category" id="category">
+            <option value="">Selezione categoria</option>
+            <option value="smartphones">Smartphone</option>
+            <option value="laptops">Computer</option>
+            <option value="fragrances">Profumi</option>
+            <option value="skincare">Cura del viso</option>
+            <option value="groceries">Profumi</option>
+            <option value="home-decoration">Decorazioni per la casa</option>
+            <option value="furnitures">Mobili</option>
+            <option value="tops">Profumi</option>
+            <option value="womens-dresses">Abiti per donna</option>
+            <option value="womens-shoes">Scarpe per donna</option>
+            <option value="make-up">Mascara</option>
+            <option value="woman-watches">Orologi per donna </option>
+            <option value="mens-watches">Orologi per uomo</option>
+            <option value="automotive"> Automobili</option>
+            <option value="lighting">Lampadari</option>
+        </select>
+        <select class="orderProducts" name="orderby" id="orderbyprice">
+            <option value=""> Ordina per prezzo</option>
+            <option value="0-100">da 0 a 200</option>
+            <option value="200-1000">da 200 a 1000</option>
+        </select>
+    </form>
+    <div id="root"></div>
+
+</body>
+
+</html>
