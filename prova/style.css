@@ -1,0 +1,200 @@
+body {
+    background-color: rgb(18, 22, 24);
+    scroll-behavior: smooth;
+}
+
+.container {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    /* height: 100vh; */
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: rgb(18, 22, 24);
+    cursor: pointer;
+    padding-left: 15px;
+    align-items: center;
+    padding-top: 0px
+}
+
+
+
+.column:hover {
+    background-color: rgb(10, 148, 194);
+    color: rgb(229, 235, 242);
+    transform: scale(1.3);
+
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    padding-top: 7px;
+    /* border-radius: 30px; */
+}
+
+.containerFiglio {
+    display: flex;
+}
+
+.images {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+
+}
+
+
+
+.text_twitter {
+    display: flex;
+    /* margin-left: 50px; */
+    background-color: rgb(10, 148, 194);
+    width: 230px;
+    height: 25px;
+    border-radius: 80px;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2px;
+    padding-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.text_twitter:hover {
+    transform: scale(1.2);
+}
+
+#twitterImg {
+    height: 80px;
+}
+
+.profileButton {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    color: white;
+}
+
+.profileButton__username {
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.profileButton__content {
+    display: flex;
+    align-items: center;
+}
+
+#img_profile {
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+.profileButton__alis {
+    margin-top: 0px;
+}
+
+.alert {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    background-color: white;
+    justify-content: center;
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    color: rgba(91, 89, 89, 0.786);
+    margin: 20%;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #aaa;
+}
+
+#button1 {
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    height: 50px;
+    width: 300px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#button1:hover {
+    transform: scale(1.2);
+}
+
+#button2 {
+    color: white;
+    background-color: rgb(10, 148, 194);
+    ;
+    border-radius: 30px;
+    height: 50px;
+    width: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#button2:hover {
+    transform: scale(1.2);
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgba(116, 151, 176, 0.2);
+    margin-right: 10px;
+}
+
+.close:hover {
+    background-color: rgb(10, 148, 194);
+    color: rgb(229, 235, 242);
+    width: 50px;
+}
+
+/* 
+#login_input {
+    display: none;
+} */
